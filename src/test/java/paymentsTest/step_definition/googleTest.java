@@ -33,6 +33,7 @@ public class googleTest {
     }
     @Then("title should include {string} name")
     public void titleShouldIncludeName(String product) {
+        System.out.println("Hi");
         Assert.assertTrue(Driver.getDriver().getTitle().contains(product));
 
 
