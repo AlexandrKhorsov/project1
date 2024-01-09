@@ -31,6 +31,7 @@ public class googleTest {
     public void titleShouldIncludeName(String product) {
         Assert.assertTrue(Driver.getDriver().getTitle().contains(product));
 
+
     }
 
     @Then("User should see following links")
