@@ -22,6 +22,8 @@ public class googleTest {
     }
     @When("User in put {string} into input bar")
     public void userInPutIntoInputBar(String product) {
+
+
         Driver.getDriver().findElement(By.id("APjFqb")).clear();
         Driver.getDriver().findElement(By.id("APjFqb")).sendKeys(product+ Keys.ENTER);
 
