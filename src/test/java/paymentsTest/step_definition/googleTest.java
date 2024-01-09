@@ -24,6 +24,8 @@ public class googleTest {
     public void userInPutIntoInputBar(String product) {
         Driver.getDriver().findElement(By.id("APjFqb")).clear();
         Driver.getDriver().findElement(By.id("APjFqb")).sendKeys(product+ Keys.ENTER);
+
+
     }
     @Then("title should include {string} name")
     public void titleShouldIncludeName(String product) {
