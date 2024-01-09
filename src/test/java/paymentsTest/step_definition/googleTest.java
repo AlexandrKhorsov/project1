@@ -26,10 +26,12 @@ public class googleTest {
         Driver.getDriver().findElement(By.id("APjFqb")).sendKeys(product+ Keys.ENTER);
 
 
+
     }
     @Then("title should include {string} name")
     public void titleShouldIncludeName(String product) {
         Assert.assertTrue(Driver.getDriver().getTitle().contains(product));
+
 
     }
 
